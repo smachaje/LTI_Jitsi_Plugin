@@ -1,15 +1,6 @@
 # LTI_Jitsi_Plugin
-[Mattermost] Hackathon on November, 2020
 
 Installation instructions in Blackboard Learn:
-
-Self-hosted:
-1. Download and run jitsi-meet project in Ubuntu/Debian/docker
-https://github.com/jitsi/jitsi-meet
-2. Replace meet.jit.si in index.php with your own meet.jit.si.school.edu 
-3. Follow Cloud-hosted steps by replacing apps.dataii.com with your own meet.jit.si.school.edu
-
-Cloud-hosted:
 
 1. In Admin panel, navigate to LTI Integrations  
 2. Approve apps.dataii.com as an LTI domain  
@@ -22,9 +13,26 @@ Cloud-hosted:
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;icon: (download from the project above)  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tool provider url: https://apps.dataii.com/jitsi/  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tool provider key & secret: https://apps.dataii.com/bb/ltitool/register.php  
+
+4. Sample optional configuration for Tool Provider Custom Parameters:
+meeturl - alternative server running Jitsi meet
+saltenc - encryption salt to make the Jitsi room URL unpredictable even if someone reads this code or documentation
+dailyreset - each day room URLs will be different in case they were shared with a larger group of collaborators such as guest speakers
+
+meeturl=meet.systemli.org
+saltenc=asdfasdfasdf
+dailyreset=true
+
+You can host Jitsi on your own servers:
+1. Download and run jitsi-meet project in Ubuntu/Debian/docker
+https://github.com/jitsi/jitsi-meet
+2. Replace meet.jit.si in the LTI placement cutom configuration with your own meeturl=meet.jit.si.school.edu 
+3. Follow Cloud-hosted steps by replacing apps.dataii.com with your own meet.jit.si.school.edu
+
   
   
 
 # How it works
 
+Video1:
 https://www.youtube.com/watch?v=00OYWWmR4Vk

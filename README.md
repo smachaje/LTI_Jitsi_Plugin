@@ -19,8 +19,10 @@ meeturl - alternative server running Jitsi meet
 saltenc - encryption salt to make the Jitsi room URL unpredictable even if someone reads this code or documentation
 dailyreset - each day room URLs will be different in case they were shared with a larger group of collaborators such as guest speakers
 
-meeturl=meet.systemli.org
-saltenc=asdfasdfasdf
+Optional Tool Provider Custom Parameters:
+
+meeturl=meet.systemli.org\
+saltenc=asdfasdfasdf\
 dailyreset=true
 
 You can host Jitsi on your own servers:

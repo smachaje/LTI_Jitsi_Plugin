@@ -40,6 +40,8 @@ Installation instructions in Canvas LMS:/
 2. In Settings for account or course, add new app configuration
 3. Use name: Jitsi Video Rooms
 4. After saving the app configuration use External Tool to place the link in the course.
+
+More about apps configuration in Canvas: https://www.eduappcenter.com/tutorials/canvas
   
 
 # How it works

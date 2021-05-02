@@ -1,6 +1,8 @@
 # LTI_Jitsi_Plugin
 
-Installation instructions in Blackboard Learn:
+LTI configuration is LMS specific.  The instructions below show Blackboard Learn and Canvas configuration:
+
+Installation instructions in Blackboard Learn:\
 
 1. In Admin panel, navigate to LTI Integrations  
 2. Approve apps.dataii.com as an LTI domain  
@@ -31,7 +33,13 @@ https://github.com/jitsi/jitsi-meet
 2. Replace meet.jit.si in the LTI placement cutom configuration with your own meeturl=meet.jit.si.school.edu 
 3. Follow Cloud-hosted steps by replacing apps.dataii.com with your own meet.jit.si.school.edu
 
-  
+
+Installation instructions in Canvas LMS:\
+
+1. Use this XML configuration files for LTI 1.3: https://www.eduappcenter.com/configurations/jpzki6053w5k9pue.xml
+2. In Settings for account or course, add new app configuration
+3. Use name: Jitsi Video Rooms
+4. After saving the app configuration use External Tool to place the link in the course.
   
 
 # How it works
